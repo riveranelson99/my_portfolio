@@ -30,6 +30,16 @@ nav li {
     font-size: 25px;
 }
 
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+section h2 {
+    flex: 0 0 20%;
+    border-right: solid 4px;
+}
+
 a {
     text-decoration: none;
 }
