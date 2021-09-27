@@ -47,6 +47,7 @@ figure {
 }
 
 figure h2 {
+    font-size: 50px;
     color: black;
     background-color: silver;
     position: absolute;
@@ -62,16 +63,40 @@ figure h2 {
     height: 200px;
 }
 
+.align-border {
+    max-width: 95%;
+}
+
 section {
     margin: 20px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 section h2 {
     flex: 0 0 15%;
     border-right: solid 4px;
+}
+
+section li {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    flex: 0 0 24%;
+}
+
+section div {
+    font-size: 30px;
+    font-family: serif;
+    font-style: oblique;
+}
+
+a {
+    color: black;
+    padding: 10px;
+    margin: 5px;
 }
 
 .grid-box {
@@ -99,10 +124,13 @@ section h2 {
 
 .coming-soon {
     background-image: url(../images/placeholder-image.jpg);
+    background-size: 100% 125%;
+    background-repeat: no-repeat;
 }
 
 p {
     flex: 0 0 80%;
+    font-size: 20px;
 }
 
 a {
