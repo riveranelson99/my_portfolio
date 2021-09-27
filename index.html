@@ -14,21 +14,21 @@
     <header>
         <h1>Nelson Rivera</h1>
         <nav>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="mywork">My Work</a></li>
-            <li><a href="contactme">Contact Me</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
         </nav>
     </header>
 
-    <figure>
-        <img src="./assets/images/" alt="Photo of me">
+    <figure class="feature-banner">
+        <img src="./assets/images/staredad.jpg" alt="Photo of me" id="profile-pic">
         <caption>
             <h2>Coder Extraordinaire</h2>
         </caption>
     </figure>
 
     <main>
-        <section>
+        <section id="about-me">
             <h2>About Me</h2>
             <p>
                 Why hello there! My name is Nelson Rivera and I am currently a student of Northwestern's coding bootcamp.
@@ -37,11 +37,18 @@
             </p>
         </section>
 
-        <section>
+        <section id="my-work">
             <h2>My Work</h2>
+            <div class="grid-box">
+                <a href="https://riveranelson99.github.io/seo-code-refactor/" class="grid-item horiseon">Horiseon</a>
+                <a href="Work_in_progress" class="grid-item coming-soon">Coming Soon</a>
+                <a href="Work_in_progress" class="grid-item coming-soon">Coming Soon</a>
+                <a href="Work_in_progress" class="grid-item coming-soon">Coming Soon</a>
+                <a href="Work_in_progress" class="grid-item coming-soon">Coming Soon</a>
+            </div>
         </section>
 
-        <section>
+        <section id="contact-me">
             <h2>Contact Me</h2>
             <li><a href="phone">555-555-5555</a></li>
             <li><a href="email">email@email.com</a></li>

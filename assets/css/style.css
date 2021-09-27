@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    background-color: lightsteelblue;
+}
+
 header {
     background: linear-gradient(
         45deg, black, transparent);
@@ -30,14 +35,74 @@ nav li {
     font-size: 25px;
 }
 
+figure {
+    position: relative;
+}
+
+#profile-pic {
+    height: 125px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+figure h2 {
+    color: black;
+    background-color: silver;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.feature-banner {
+    background-image: url(../images/space-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 200px;
+}
+
 section {
+    margin: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
 
 section h2 {
-    flex: 0 0 20%;
+    flex: 0 0 15%;
     border-right: solid 4px;
+}
+
+.grid-box {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-rows: minmax(150px, 1fr);
+    flex: 0 0 80%;
+}
+
+.grid-item {
+    grid-column: span 4;
+    display: flex;
+    align-items: flex-end;
+    background-size: 125%;
+}
+
+.horiseon {
+    background-image: url(../images/port-1-img.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    grid-column: span 8;
+    grid-row: span 3;
+}
+
+.coming-soon {
+    background-image: url(../images/placeholder-image.jpg);
+}
+
+p {
+    flex: 0 0 80%;
 }
 
 a {
