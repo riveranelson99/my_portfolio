@@ -78,6 +78,7 @@ section {
 section h2 {
     flex: 0 0 15%;
     border-right: solid 4px;
+    font-size: 20px;
 }
 
 section li {
@@ -139,4 +140,35 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        text-align:center;
+        padding: 5%;
+    }
+
+    header h1 {
+        width: 100%;
+        position:absolute;
+        top: 0;
+    }
+
+    nav {
+        position:relative;
+    }
+
+    #profile-pic {
+        left: 45%;
+    }
+
+    figure h2 {
+        width:100%;
+        text-align:center;
+    }
+
+    .grid-item {
+        grid-column: 1/-1;
+    }
 }
